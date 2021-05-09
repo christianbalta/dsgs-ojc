@@ -1,8 +1,13 @@
 
+import './App.css';
+
+
 function App() {
   return (
     <div className="App">
-      <h1>Was looooos</h1>
+      
+      <img src="/images/fuckyou.jpg" alt="Love"/>
+      
     </div>
   );
 }

@@ -9,7 +9,7 @@ const Sentence = () => {
     useEffect(function () {
         async function getSentence() {
             try {
-                const response = await axios.get("/api/sentences");
+                const response = await axios.get("https://dsgs-ojc.herokuapp.com/api/sentences");
                 setSentences(response.data);
             } catch (error) {
                 console.log('error', error);

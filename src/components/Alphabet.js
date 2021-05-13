@@ -9,7 +9,7 @@ const Alphabet = () => {
     useEffect(function () {
         async function getLetters() {
             try {
-                const response = await axios.get("/api/letters");
+                const response = await axios.get("https://dsgs-ojc.herokuapp.com/api/letters");
                 setLetters(response.data);
             } catch (error) {
                 console.log('error', error);

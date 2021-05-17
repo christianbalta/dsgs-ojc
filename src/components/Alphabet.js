@@ -24,16 +24,16 @@ const Alphabet = () => {
     }
 
     return (
-        <>
+        <div>
             <ListGroup horizontal>
                 {
                     letters.map((letter) => {
                         return (
-                            <div key={letter._id}>
-                                <ListGroup.Item
-                                    onClick={() => getImage(letter.imageUrl)}
-                                    className="letter">{letter.letter}</ListGroup.Item>
-                            </div>
+                            <ListGroup.Item
+                                key={letter._id}
+                                onClick={() => getImage(letter.imageUrl)}
+                                className="letter">{letter.letter}
+                            </ListGroup.Item>
                         )
                     })
                 }
@@ -41,7 +41,7 @@ const Alphabet = () => {
             <div className="text-center">
                 <Image src={image} fluid className="mt-5 image"/>
             </div>
-        </>
+        </div>
     );
 };
 
